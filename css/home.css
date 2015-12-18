@@ -1,0 +1,76 @@
+@import url("華康雅風體/stylesheet.css");
+body{
+	background: #232B28;
+	}
+#grayback{
+	background-color: rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;	
+	}
+img{
+	display:block;
+	margin:auto;
+	}
+#homecontainer{
+	color:#f7f6f6;
+	font-family: "華康雅風體";
+	font-size: 80px;
+	text-align: center;
+	position: absolute;
+	top: 180px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	}
+#homecontainer2{
+	color:#f7f6f6;
+	font-family: "華康雅風體";
+	font-size: 80px;
+	text-align: center;
+	position: absolute;
+	top: 180px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	}
+#text{
+	width: 50%;
+	font-family: "華康雅風體";
+	font-size: 25px;
+	text-align: justify;
+	margin: auto;
+	display: block;
+	}
+#homeimg{
+	width:12%;
+	height:auto;
+	}
+.enterBtn{
+	width: 243px;
+	height: 63px;
+	background-color: rgba(0,0,0,0.00);
+	border-style: none;
+	line-height: 0px;
+	text-align: center;
+	background-image: url(../source/enter.png);
+	font-family: "華康雅風體";
+	font-style: normal;
+	font-size: 50px;
+	color: #f7f6f6;
+	}
+.enterBtn:hover{
+	background-size: 100% auto;
+	background-color: rgba(255,255,255,0.5);
+	border-style: none;
+	color: #464544;
+	border-style: none;
+	}
+.enterBtn:active{
+	background-size: 100% auto;
+	background-color: rgba(255,255,255,0.5);
+	border-style:none;
+	color:#646362;
+	border-style: none;
+	}

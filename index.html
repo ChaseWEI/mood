@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+  <link href="css/index_default.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+    
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+  
+  <header class="banner" id="header">
+  <div class="row">
+  <div class="col-md-9 col-sm-3 col-xs-3 style1"></div>
+  <div class="col-md-1 col-sm-3 col-xs-3 style1"><img class="link" src="source/self.png" alt=""/></div>
+  <div class="col-md-1 col-sm-3 col-xs-3 style1"><img class="link" src="source/accont.png" alt=""/></div>
+  <div class="col-md-1 col-sm-3 col-xs-3 style1"><a href="logout.php"><img class="link" src="source/login out.png" alt=""/></a></div>
+  </div>
+  </header>
+  
+  
+  <div class="container-fluid" id="indexcontainer">
+      <div id="anim_1" class="resize" onmouseover="resize(this, O('anim_2'))">
+        <img id="img_1" src="MP4/inbox.gif" alt="pic_1">
+      <div class="container" id="inboxbtn">
+      	<button type="button" class="btn btn-md enterBtn" id="inletter" onclick="location.href='inbox.html'">收信</button>
+      </div>
+      </div>
+      
+      <div id="anim_2" class="resize" onmouseover="resize(this, O('anim_1'))">
+        <img id="img_2" src="MP4/write.gif" alt="pic_2">
+        <div class="container" id="writebtn">
+      	<button type="button" class="btn btn-md enterBtn" id="outletter" onclick="location.href='write.html'">寫信</button>
+      </div>
+      </div>
+      
+    </div>
+    <div class="clearBoth"></div>
+
+    <script>
+     function resize(obj_1, obj_2) {
+      obj_1.style.width = '90%';
+      obj_1.style.webkitTransition= 'width 3s ease, height 3s ease';
+      obj_1.style.mozTransition= 'width 3s ease, height 3s ease';
+      obj_1.style.otransition= 'width 3s ease, height 3s ease';
+      obj_1.style.transition= 'width 3s ease, height 3s ease';
+      obj_2.style.width = '10%';
+      obj_2.style.webkitTransition= 'width 3s ease, height 3s ease';
+      obj_2.style.mozTransition= 'width 3s ease, height 3s ease';
+      obj_2.style.otransition= 'width 3s ease, height 3s ease';
+      obj_2.style.transition= 'width 3s ease, height 3s ease';
+    }
+    function resizeBack(obj_1, obj_2) {
+      obj_1.style.width = '50%';
+      obj_2.style.width = '50%';
+    }
+    function O(i) {
+      return typeof i == 'object' ? i : document.getElementById(i); 
+    }
+    </script>
+  
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>

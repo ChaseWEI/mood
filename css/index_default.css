@@ -1,0 +1,49 @@
+/*Init Container*/
+body{
+	background-color: #232B28;
+	position:relative;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	}
+#indexcontainer{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	}
+#header{
+	width: 100%;
+	height: 40px;
+	position: fixed; /* 1 */
+	z-index: 2; /* 1 */
+	background: #232b28;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	text-align: right;
+	}
+.link{
+	cursor: pointer;
+	width:35px;
+	height:35px;
+	}
+.resize{
+  overflow: hidden;
+}
+
+.resize img {
+  width: 1920px;
+}
+
+#anim_1{
+  float: left;
+  width: 50%;
+}
+#anim_2{
+  float: right;
+  direction: rtl;
+  width: 50%;
+}
+
+

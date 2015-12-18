@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>陌生 Mood</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+       
+  </head>
+  <body>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/test.js"></script>
+    
+    <script>
+		$(document).ready(function(){
+			$("#hide_show").hide();
+    		$("button").click(function(){
+        	$("#homecontainer").fadeOut(1500);
+			$("#hide_show").fadeIn(3000);
+    			});
+			});
+	</script>
+    
+    <div class="row">
+    	<div class="col-md-12 col-sm-12 col-xs-12">
+        
+			<div class="homepage-hero-module">
+    			<div class="video-container">
+        			<div class="filter"></div>
+        			<video autoplay loop class="fillWidth">
+            			<source src="MP4/home.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            			<source src="WEBM/home.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        			</video>
+        		<div class="poster hidden">
+           			<img src="Snapshots/home.png" alt="">
+        		</div>
+    			</div>
+    		</div>
+            
+          <div class="container" id="homecontainer">
+          	<div class="row">
+    			<div class="col-md-12 col-sm-12 col-xs-12">
+       	  			<img src="source/LOGO.png" id="homeimg" width="292" height="525" alt=""/>
+                    
+                    <div class="row">
+    					<div class="col-md-12 col-sm-12 col-xs-12">
+          					<button type="button" class="btn btn-md enterBtn">進入</button>
+                        </div>
+        			</div>
+                     
+            	</div>
+        	</div>
+         </div>
+         
+         
+         
+         <div id="hide_show">
+			<div class="container-fluid" id="grayback"></div>
+          
+          	<div class="container" id="homecontainer2">
+          	<div class="row">
+    			<div class="col-md-12 col-sm-12 col-xs-12">
+                	<p>陌聲</p>
+       	  			<p id="text">沒有人和一個人是朋友，但實際上，沒有人喜歡一個人，而一個人卻不喜歡沒有人；一個人遊玩時，沒有人與他同樂；一個人傷心時，沒有人為他擦淚；一個人想說話時，沒有人在身旁傾聽。但是一個人還是不喜歡沒有人。一個人離開沒有人的生活。一個人體會到許多人很好相處，許多人為他傾聽，許多人與他同樂。一個人決定將沒有人拉入許多人的生活；一個人擁有了沒有人的靜謐，也擁有了許多人的歡樂。</p>
+                    
+                    <div class="row">
+    					      <div class="col-md-12 col-sm-12 col-xs-12">
+          					  <button type="button" class="btn btn-md enterBtn" onclick="location.href='register.html'">註冊</button>
+                      <button type="button" class="btn btn-md enterBtn" onclick="location.href='login.php'">登入</button>
+                    </div>
+        			</div>
+                     
+            	</div>
+        	</div>
+         </div>
+       </div>
+        </div>
+	</div>
+    
+    
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>

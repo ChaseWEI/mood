@@ -1,8 +1,8 @@
 <?php // Example 26-1: functions.php
-  $dbhost  = 'localhost';    // Unlikely to require changing
-  $dbname  = 'mood_db';   // Modify these...
-  $dbuser  = 'root';   // ...variables according
-  $dbpass  = '';   // ...to your installation
+  $dbhost  = 'OPENSHIFT_MYSQL_DB_HOST';    // Unlikely to require changing
+  $dbname  = 'mood';   // Modify these...
+  $dbuser  = 'OPENSHIFT_MYSQL_DB_USERNAME';   // ...variables according
+  $dbpass  = 'OPENSHIFT_MYSQL_DB_PASSWORD';   // ...to your installation
   $appname = "Mood"; // ...and preference
 
   $connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
